@@ -455,3 +455,4 @@ MIT — use it, fork it, adapt it, publish with it.
   <strong>9 agents. 6 laws. Your thesis, defended.</strong><br>
   <em>Stop procrastinating. Type <code>/interview</code>.</em>
 </p>
+# Thesis-Agent-Kit
