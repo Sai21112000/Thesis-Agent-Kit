@@ -1,0 +1,47 @@
+# .windsurfrules — Thesis Agent Kit v2.0
+# Auto-loaded by Windsurf. Identical rules to .cursorrules.
+
+## Always Active
+1. Read PROJECT-CONFIG.md before ANY prose
+2. Read .agent/CORE-LAWS.md before ANY drafting
+3. Read .agent/CORE-STRUCTURE.md for chapter defaults
+4. Every paragraph traces to RQ1/RQ2/RQ3
+5. Never invent metric values — use [READ FROM RESULTS/]
+6. Citation style from PROJECT-CONFIG.md (default: APA 7th)
+7. Methods/Results: passive voice
+8. Forbidden: "it is important", "in today's world", "as mentioned", "obviously"
+
+## Commands
+/write-chapter   -> .agent/workflows/write-chapter.md
+/review-draft    -> .agent/workflows/review-draft.md
+/check-citations -> .agent/workflows/check-citations.md
+/advisor         -> .agent/skills/research-advisor.md
+/snapshot        -> .agent/workflows/snapshot.md
+/restore         -> .agent/workflows/restore.md
+/history         -> .agent/workflows/history.md
+/figures         -> .agent/skills/figure-generation.md
+/interview       -> .agent/skills/research-interrogator.md
+
+## Auto-Loading (Core — always)
+All chapters: .agent/skills/research-writer.md + .agent/CORE-LAWS.md + .agent/CORE-STRUCTURE.md
+Review:       .agent/skills/research-reviewer.md + .agent/CORE-QA.md
+Ch.2:         + .agent/skills/literature-review.md
+LaTeX:        .agent/skills/latex-formatting.md
+Citations:    .agent/skills/citation-checker.md
+Snapshots:    .agent/skills/snapshot-manager.md
+
+## On-demand
+Figures / diagrams / plots (TikZ, Matplotlib, schematic prompts, RESULTS/ traceability):
+  .agent/skills/figure-generation.md — load with /figures or when the user requests visual figure support.
+
+## Auto-Loading (Domain — from PROJECT-CONFIG.md)
+Read `domain:` field from PROJECT-CONFIG.md, then load:
+  .agent/domains/[domain]/*.md
+
+Available domains:
+  computer-vision  -> .agent/domains/computer-vision/
+  nlp              -> .agent/domains/nlp/
+  reinforcement-learning -> .agent/domains/reinforcement-learning/
+  biomedical       -> .agent/domains/biomedical/
+  social-science   -> .agent/domains/social-science/
+  [custom]         -> copy .agent/domains/_template/ and fill
