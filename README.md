@@ -1,6 +1,10 @@
 # Thesis Agent Kit
 
 <p align="center">
+  <a href="https://sai21112000.github.io/Thesis-Agent-Kit/"><img src="https://img.shields.io/badge/Live_site-Open-6C5CE7?style=for-the-badge" alt="Open the Thesis Agent Kit live site"></a>
+</p>
+
+<p align="center">
   <img src="docs/hero-banner.png" alt="Thesis Agent Kit — 9 AI Agents. 6 Immutable Laws. One Bulletproof Thesis." width="800">
 </p>
 
